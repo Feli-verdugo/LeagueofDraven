@@ -1,0 +1,42 @@
+
+#logo{
+
+    display:flex;
+    align-items: center;
+    animation-name: ndea;
+    animation-duration: 2s;
+    transition-duration: .5s;
+    
+}
+
+#logo:hover > img {
+    transform: rotate(360deg);
+    transition-duration: .5s;
+}
+
+nav{
+    
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5vw;
+    
+
+    align-items: center;
+    animation-name: bajar;
+    animation-duration: 1s;
+}
+
+nav{
+    
+    background-color: #20232a;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5vw;
+    
+
+    align-items: center;
+    animation-name: bajar;
+    animation-duration: 1s;
+}
+

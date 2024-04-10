@@ -1,0 +1,32 @@
+.navbar-nav {
+    margin-left: auto;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+    
+}
+
+
+.product {
+    width: 200px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product a {
+    color: #000000;
+    text-decoration: none;
+}
+
