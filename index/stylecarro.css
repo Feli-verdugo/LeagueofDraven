@@ -1,42 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-#logo{
+h4 {
 
-    display:flex;
-    align-items: center;
-    animation-name: ndea;
-    animation-duration: 2s;
-    transition-duration: .5s;
+    color: #cba865;
+
+}
+
+
+h6 {
+    color: #cba865;
+
+
+}
+
+
+
+
+.contenedor {
+    color: #cba865;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+
+}
+
+
+.carro {
+
+    border: 1px solid #cba865;
+    padding: 20px;
+    margin-bottom: 20px;
     
 }
 
-#logo:hover > img {
-    transform: rotate(360deg);
-    transition-duration: .5s;
-}
-
-nav{
-    
-    background-color: aquamarine;
+.producto {
     display: flex;
     justify-content: space-between;
-    padding: 5px 5vw;
-    
-
-    align-items: center;
-    animation-name: bajar;
-    animation-duration: 1s;
+    margin-bottom: 10px;
 }
 
-nav{
-    
-    background-color: #20232a;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 5vw;
-    
+.promo {
+    margin-top: 20px;
+}
 
-    align-items: center;
-    animation-name: bajar;
-    animation-duration: 1s;
+.promo label {
+    margin-right: 10px;
+    color: #cba865;
+}
+
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product {
+    width: 100px;
+
+    border-radius: 5px;
 }
 

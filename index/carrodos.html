@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG STORE - Carrito</title>
+    <link rel="stylesheet" href="stylecarro.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #0A1428;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        h4 {
+
+            color: #cba865;
+
+        }
+
+
+        h6 {
+            color: #cba865;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0e294f;">
+        <div class="container">
+            <a id="logo" class="navbar-brand" href="../index/Index.html">
+                <img src="GGSTORE_ICON.png" alt="" height="66">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mi-menu">
+                <ul id="menu" class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index/Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../figuras/Figuras.html">Figuras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Coleccion/accesorios.html">Articulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Ropas/ropa.html">Ropa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index/login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a id="logo" class="navbar-brand" href="testcarro.html">
+                <img src="../index/carrito_compra.png" alt="" height="55">
+            </a>
+
+        </div>
+    </nav>
+
+
+    <body>
+        <div class="contenedor">
+            <h1>Carrito</h1>
+            <div class="carro">
+                <div class="producto">
+                    <div class="product">
+
+                        <img src="../figuras/sona.jpg" alt="Nendo Sona">
+
+                    </div>
+                    <h6 class="nombre">Nendoroid Sona</h6>
+                    <h6 class="precio">$20.000</h6>
+                    <h6 class="cantidad">2</h6>
+                    <h6 class="subtotal">$40.000</h6>
+                </div>
+                <div class="producto">
+                    <div class="product">
+
+                        <img src="../figuras/Figura Ahri Spirit blossom.jpg" alt="figura ahri">
+
+                    </div>
+                    <h6 class="nombre">Figura Ahri</h6>
+                    <h6 class="precio">$60.000</h6>
+                    <h6 class="cantidad">1</h6>
+                    <h6 class="subtotal">$60.000</h6>
+                </div>
+                <div class="total">
+                    <h4>Total: $100.000</h4>
+                </div>
+            </div>
+            <div class="promo">
+                <label for="promo-codigo">Ingrese un codigo de promocion:</label>
+                <input type="texto" id="promo-codigo" name="promo-codigo">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </body>
+
+
+</body>
+
+</html>
