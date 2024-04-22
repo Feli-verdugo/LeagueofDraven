@@ -1,112 +1,102 @@
-#bodyLogin{
-    font-size: 15px;
-  }
+.navbar-nav {
+  margin-left: auto;
+}
+
+#logo{
+
+  display:flex;
+  align-items: center;
+  animation-name: ndea;
+  animation-duration: 2s;
+  transition-duration: .5s;
   
-  .bg{
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
+}
+
+#logo:hover > img {
+  transform: rotate(360deg);
+  transition-duration: .5s;
+}
+
+
+.bg{
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+nav{
   
-  #login-form{
-    width: 320px;
-    background: #010a13;
-    position: absolute;
-    margin-left: 1200px;
-    height: 100%;
-    color: white;
-    border-left: 5px solid #1e282d;
-    top: 0;
-    right: 0;
-  }
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5vw;
   
-  .logmein{
-    padding-top: 160px;
-    padding-left: 5px;
-  }
-  
-  .signmein{
-    font-size: 20px;
-    position: absolute;
-    top: 130px;
-  }
-  
-  input[type="text"], input[type="password"]{
-    background: #000306;
-    border: 1px solid #785a28;
-    color: white;
-    height: 30px;
-    width: 95%;
-  }
-  
-  input[type="checkbox"]{
-    background: #000911;
-    border: 3px solid #5e4822;
-  }
-  
-  .remember{
-    font-size: 15px;
-    position: absolute;
-    left: 10px;
-  }
-  
-  button{
-    height: 35px;
-    width: 80%;
-    position: absolute;
-    bottom: 200px;
-    background: #1e2328;
-    border: 1px solid #5c5b57;
-    color: white;
-    text-align: center;
-    left: 30px;
-  }
-  
-  .league-logo{
-    height: 150px;
-    position: absolute;
-    top: 0;
-    left: 80px;
-  }
-  
-  .patch{
-    position: absolute;
-    border-top: 5px solid #1e282d;
-    bottom: 0;
-    height: 40px;
-    width: 320px;
-    left: 0;
-    text-align: center;
-    color: #5c5b57;
-  }
-  
-  .forgot{
-    position: absolute;
-    bottom: 100px;
-    font-size: 16px;
-    left: 0;
-  }
-  
-  a{
-    text-decoration: none;
-    color: #0280aa;
-  }
-  
-  a:hover{
-    color: white;
-  }
-  
-  ul{
-    list-style: none;
-  }
-  
-  .league-logo2{
-    height: 100px;
-    position: absolute;
-    bottom: 10px;
-    left: 110px;
-  }
-  
+
+  align-items: center;
+  animation-name: bajar;
+  animation-duration: 1s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#body_login2{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(300deg, #53056f, #180362);
+}
+
+
+
+#espacioloko{
+
+  padding: 6px;
+
+}
+
+.contenedor{
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 0px;
+  width: 40%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+a{
+  color: #7c7c7c;
+  text-decoration: none;
+}
+
+input{
+  box-shadow: none !important;
+}
+
+.correct{
+  border: 1px #13a01d8b solid !important;
+}
+.incorrect{
+  border: 1px #a013138b solid !important;
+}
+
+.texto-error{
+  text-align: right;
+  color: rgba(255, 0, 0, 0.616);
+  font-size: .9rem;
+}
