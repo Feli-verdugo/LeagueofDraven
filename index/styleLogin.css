@@ -100,3 +100,33 @@ input{
   color: rgba(255, 0, 0, 0.616);
   font-size: .9rem;
 }
+
+
+
+
+
+.container{
+  position: relative;
+  height: 100%;
+
+}
+
+.video-container{
+   
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    
+}
+
+.video-container video{
+  position: relative;
+  top: 0%;
+  left: -60%;
+  object-fit: cover;
+  
+}
