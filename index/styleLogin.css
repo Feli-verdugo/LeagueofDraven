@@ -2,6 +2,8 @@
   margin-left: auto;
 }
 
+
+
 #logo{
 
   display:flex;
@@ -38,6 +40,8 @@ nav{
   align-items: center;
   animation-name: bajar;
   animation-duration: 1s;
+  opacity: 85%;
+
 }
 
 *{
@@ -66,12 +70,13 @@ nav{
   padding: 50px;
   border-radius: 0px;
   width: 40%;
+  opacity: 50%;
 }
 
 form{
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 5px;
 }
 
 h1{
@@ -86,6 +91,10 @@ a{
 
 input{
   box-shadow: none !important;
+}
+
+p{
+  margin-bottom: 0px !important;
 }
 
 .correct{
@@ -105,11 +114,6 @@ input{
 
 
 
-.container{
-  position: relative;
-  height: 100%;
-
-}
 
 .video-container{
    
@@ -126,7 +130,8 @@ input{
 .video-container video{
   position: relative;
   top: 0%;
-  left: -60%;
+  /* left: -60%; */
   object-fit: cover;
+  width: 100vw;
   
 }
