@@ -130,7 +130,6 @@ p{
 .video-container video{
   position: relative;
   top: 0%;
-  /* left: -60%; */
   object-fit: cover;
   width: 100vw;
   

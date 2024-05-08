@@ -84,3 +84,12 @@ h3 {
     color: #fff;
     text-decoration: none;
 }
+
+
+.video-container-central{
+   
+
+    width: 80%;
+    transform: translateX(210px);
+
+}

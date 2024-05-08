@@ -1,3 +1,20 @@
+
+@font-face {
+    font-family: fuentelol;
+    src: url("BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf");
+}
+
+body {
+    font-family: fuentelol;
+    margin: 0;
+    padding: 0;
+    color: #cba865;
+    
+}
+
+
+
+
 .navbar-nav {
     margin-left: auto;
 }
@@ -82,4 +99,13 @@ h3 {
 .social-media li a {
     color: #fff;
     text-decoration: none;
+}
+
+
+.video-container-central{
+   
+
+    width: 80%;
+    transform: translateX(210px);
+
 }
