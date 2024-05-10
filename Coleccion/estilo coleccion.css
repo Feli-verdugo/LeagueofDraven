@@ -19,6 +19,15 @@ body {
     margin-left: auto;
 }
 
+.navbar-nav {
+    font-family: fuentelol;
+    margin: 0;
+    padding: 0;
+    color: #cba865;
+    
+}
+
+
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -102,10 +111,49 @@ h3 {
 }
 
 
-.video-container-central{
+/*VIDEO CENTRAL*/
+.video-container-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43vh; 
+}
+
+video {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+/*texto central*/
+
+.texto-central {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    text-align: center;
+    color: #fff; 
+    animation: backwards;  
+}
+  
+
+.texto-central h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+
+
+.decoracion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5vh; 
+    
+}
    
 
-    width: 80%;
-    transform: translateX(210px);
-
+img {
+    max-width: 100%; 
+    max-height: 100%; 
 }
