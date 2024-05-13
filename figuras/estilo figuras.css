@@ -118,12 +118,16 @@ video {
     text-align: center;
     color: #fff; 
     animation: backwards;  
+    
 }
   
+
+
 
 .texto-central h1 {
   font-size: 4rem;
   margin-bottom: 20px;
+  font-family: fuentelol;
 }
 
 
@@ -150,6 +154,7 @@ img {
     align-items: flex-start;
     padding: 20px;
     overflow-x: hidden;
+    color: #000;
 }
 
 .footer-info {
@@ -171,19 +176,22 @@ img {
     padding: 0;
     margin: 0;
     ;
+    
 }
 
 .social-media {
   display: flex;
   flex-direction: column;
+  
 }
 
 .social-media li {
   margin-bottom: 5px; 
+  
 }
 
 .social-media li a:hover {
-    color: #988f11;
+    color: #470505;
 }
 
 @media (max-width: 768px) {
@@ -196,3 +204,14 @@ img {
     text-align: center;
     margin-top: 20px;
 }
+
+footer {
+    background-color: #967a45;
+
+}
+
+#espacioloko2footerfiguras{
+
+    padding: 80px;
+  
+  }

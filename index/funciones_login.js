@@ -28,14 +28,9 @@ function validarUsuario() {
 
 
 
-
-
-
-
-
 function validarNombre() {
     let user = document.querySelector("#nombre");
-    if(user.value.length <= 20){
+    if(user.value.length <= 40){
         user.classList.add("correct");
         user.classList.remove("incorrect");
         document.querySelector("#error-nombre").innerHTML = "&nbsp;";
@@ -52,9 +47,11 @@ function validarNombre() {
 function validarContrasena() {
     let password = document.querySelector("#password");
     let contieneMayuscula = /[A-Z]/.test(password.value);
+    let tieneEspacio = /\s/.test(password.value);
     let contieneNumero = /\d/.test(password.value); 
+    let formatoaceptado = /^[a-zA-Z0-9._-]+$/i.test(password.value);
 
-    if (password.value.length >= 5 && contieneMayuscula && contieneNumero) { 
+    if (password.value.length >= 5 && contieneMayuscula && contieneNumero && formatoaceptado) { 
         password.classList.add("correct");
         password.classList.remove("incorrect");
         document.querySelector("#error-password").innerHTML = "&nbsp;";
@@ -67,13 +64,13 @@ function validarContrasena() {
             document.querySelector("#error-password").innerHTML = "Error, la contraseña debe contener al menos una letra mayúscula.";
         } else if (!contieneNumero) {
             document.querySelector("#error-password").innerHTML = "Error, la contraseña debe contener al menos un número.";
+        } else if (!tieneEspacio) {
+            document.querySelector("#error-password").innerHTML = "Error, la contraseña no puede tener espacios";
+        } else if (!formatoaceptado) {
+            document.querySelector("#error-password").innerHTML = "Error, el formato esta mal, intente con '.' o '_' para los espacios";
         }
     }
 }
-
-
-
-
 
 
 
