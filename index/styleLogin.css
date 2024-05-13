@@ -1,5 +1,13 @@
 .navbar-nav {
-  margin-left: auto;
+  font-family: fuentelol;
+  margin: 0;
+  padding: 0;
+  color: #cba865;
+  justify-content: space-evenly;
+}
+
+.navbar-collapse{
+  justify-content: end;
 }
 
 
