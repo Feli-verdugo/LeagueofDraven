@@ -30,7 +30,8 @@ function validarUsuario() {
 
 function validarNombre() {
     let user = document.querySelector("#nombre");
-    if(user.value.length <= 40){
+    let contieneNumeros = /\d/.test(nombre.value); 
+    if(user.value.length <= 40 && !contieneNumeros){
         user.classList.add("correct");
         user.classList.remove("incorrect");
         document.querySelector("#error-nombre").innerHTML = "&nbsp;";
@@ -38,8 +39,10 @@ function validarNombre() {
         user.classList.add("incorrect");
         user.classList.remove("correct");
         document.querySelector("#error-nombre").innerHTML = "Error, El nombre no puede sobrepasar el maximo de digitos.";
-        
-    }
+        if (contieneNumeros) {
+            document.querySelector("#error-nombre").innerHTML = "Error, El nombre no puede contener numeros."
+        } 
+    } 
 }
 
 
@@ -103,7 +106,7 @@ function validarCorreo() {
     } else {
         email.classList.add("incorrect");
         email.classList.remove("correct");
-        document.querySelector("#error-gmail").innerHTML = "Error, el correo es invalido.";
+        document.querySelector("#error-gmail").innerHTML = "Error, el correo es invalido, tiene que terminar en '@gmail.com' o '@gmail.cl'.";
     }
 }
 
