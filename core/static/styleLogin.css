@@ -1,0 +1,194 @@
+.navbar-nav {
+  font-family: fuentelol;
+  margin: 0;
+  padding: 0;
+  color: #cba865;
+  justify-content: space-evenly;
+}
+
+.navbar-collapse{
+  justify-content: end;
+}
+
+
+
+#logo{
+
+  display:flex;
+  align-items: center;
+  animation-name: ndea;
+  animation-duration: 2s;
+  transition-duration: .5s;
+  
+}
+
+#logo:hover > img {
+  transform: rotate(360deg);
+  transition-duration: .5s;
+}
+
+
+.bg{
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+nav{
+  
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5vw;
+  
+
+  align-items: center;
+  animation-name: bajar;
+  animation-duration: 1s;
+  opacity: 80%;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+#espacioloko{
+
+  padding: 6px;
+
+}
+
+.contenedor{
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 0px;
+  width: 40%;
+  opacity: 90%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+a{
+  color: #7c7c7c;
+  text-decoration: none;
+}
+
+input{
+  box-shadow: none !important;
+}
+
+p{
+  margin-bottom: 0px !important;
+}
+
+.correct{
+  border: 1px #13a01d8b solid !important;
+}
+.incorrect{
+  border: 1px #a013138b solid !important;
+}
+
+.texto-error{
+  text-align: right;
+  color: rgba(255, 0, 0, 0.616);
+  font-size: .9rem;
+}
+
+
+
+
+
+
+.video-container{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+}
+
+.video-container video{
+  position: relative;
+  top: 0%;
+  object-fit: cover;
+  width: 130%;
+}
+
+
+.contenedor-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: fuente lol;  
+}
+
+footer {
+  background-color: #967a45;
+  color: #fff;
+  padding: 20px 0;
+  
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seccion {
+  flex: 1;
+  margin-right: 80px;
+  font-family: fuente lol;
+}
+
+.seccion:last-child {
+  margin-right: 0;
+}
+h3 {
+  font-size: 1.2em;
+}
+.social-media {
+  list-style-type: none;
+  padding: 0;
+  
+  
+}
+
+.social-media li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-media li a {
+  color: #fff;
+    text-decoration: none;
+}
+.copyright{
+  font-family: fuente lol;
+}
+
+#espacioloko2footerlogin{
+  padding: 31px;
+}
+
+
+
+.btn-registrar{
+  background-color: #e0c38d;
+}
