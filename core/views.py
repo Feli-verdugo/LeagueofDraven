@@ -17,3 +17,9 @@ def ropa(request):
 def login(request):
     return render(request, 'core/login.html')
 
+def carrito(request):
+    return render(request, 'core/carrodos.html')
+
+
+def addToCar(request, id):
+    carro = request.session.get("carrito", [])

@@ -78,34 +78,42 @@ h6 {
 
 
 .contenedor-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
-    overflow-x: hidden;
-    color: #000;
+    font-family: fuente lol;  
+  }
+
+
+footer {
+    background-color: #967a45;
+    color: #000000;
+    padding: 20px 0;
+    
 }
 
 .footer-info {
     display: flex;
-    flex-wrap: wrap;
-}
+    justify-content: space-between;
+  }
 
 .seccion {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    flex: 1;
+    margin-right: 80px;
+    font-family: fuente lol;
 }
 
 .seccion:last-child {
     margin-right: 0;
 }
 
+h3 {
+    font-size: 1.2em;
+}
+
 .social-media {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    ;
-    
 }
 
 .social-media {
@@ -115,12 +123,17 @@ h6 {
 }
 
 .social-media li {
-  margin-bottom: 5px; 
-  
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media li a {
+    color: #fff;
+      text-decoration: none;
 }
 
 .social-media li a:hover {
-    color: #470505;
+    color: #fff;
 }
 
 @media (max-width: 768px) {

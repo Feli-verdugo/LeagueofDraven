@@ -58,7 +58,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0A1428;">
         <div class="container">
-            <a id="logo" class="navbar-brand" href="../index/Index.html">
+            <a id="logo" class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'images index/GGSTORE_ICON.png' %}" alt="" height="66">
             </a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu">
@@ -84,7 +84,7 @@
                 </ul>
             </div>
             
-            <a id="logo" class="navbar-brand" href="../index/carrodos.html">
+            <a id="logo" class="navbar-brand" href="{% url 'carrito' %}">
                 <img src="{% static 'images index/carrito_compra.png' %}" alt="" height="55">
             </a>
 
