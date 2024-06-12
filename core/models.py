@@ -7,4 +7,4 @@ class Producto(models.Model):
     stock = models.IntegerField()
     imagen = models.CharField(max_length=255)
 
-   
+

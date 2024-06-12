@@ -4,9 +4,7 @@
     padding: 0;
     color: #cba865;
     justify-content: space-evenly;
-  }
-
-
+}
 
 body {
     margin: 0;
@@ -26,9 +24,6 @@ h6 {
 
 }
 
-
-
-
 .contenedor {
 
     padding: 50px;
@@ -39,7 +34,6 @@ h6 {
     
 
 }
-
 
 .carro {
 
@@ -64,7 +58,6 @@ h6 {
     color: #cba865;
 }
 
-
 .product img {
     max-width: 100%;
     height: auto;
@@ -72,18 +65,15 @@ h6 {
 
 .product {
     width: 100px;
-
     border-radius: 5px;
 }
-
 
 .contenedor-footer {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
     font-family: fuente lol;  
-  }
-
+}
 
 footer {
     background-color: #967a45;
@@ -95,7 +85,7 @@ footer {
 .footer-info {
     display: flex;
     justify-content: space-between;
-  }
+}
 
 .seccion {
     flex: 1;
@@ -117,9 +107,8 @@ h3 {
 }
 
 .social-media {
-  display: flex;
-  flex-direction: column;
-  
+    display: flex;
+    flex-direction: column;
 }
 
 .social-media li {
@@ -129,7 +118,7 @@ h3 {
 
 .social-media li a {
     color: #fff;
-      text-decoration: none;
+    text-decoration: none;
 }
 
 .social-media li a:hover {
@@ -155,5 +144,50 @@ footer {
 #espacioloko2footercarro{
 
     padding: 80px;
-  
-  }
+
+}
+
+table{
+    width: 90%;
+}
+
+thead{
+    background-color: #967a45;
+    color: #c7c3c3;
+    height: 30px;
+    text-align: center;
+}
+
+th{
+    padding: 5px;
+}
+
+td{
+    text-align: center;
+}
+
+.imagen-carrito{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    display: inline-table;
+    width: 20vh;
+}
+
+tbody{
+    color: #1d1c1c;
+    background-color: #cba865;
+}
+
+table{
+    margin: 10vh;
+}
+
+.titulo-carrito{
+    justify-content: center;
+    display: flex;
+    color: #c7c3c3;
+}
+

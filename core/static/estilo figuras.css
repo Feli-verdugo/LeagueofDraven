@@ -212,7 +212,19 @@ footer {
 }
 
 #espacioloko2footerfiguras{
-
     padding: 80px;
-  
-  }
+}
+
+.figuras{
+    display: flex;
+    flex-wrap: inherit;
+    padding: 10px;
+    width: 35vh;
+    background-color: #967a45;
+    justify-content: space-between;
+}
+
+.cant-precio{
+    text-align: justify;
+}
+

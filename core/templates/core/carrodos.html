@@ -12,6 +12,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
+
         body {
             background-color: #010A13;
             background-size: cover;
@@ -103,86 +104,84 @@
         </div>
     </nav>
 
-
-    <body>
-        <div class="contenedor">
-            <h1>Carrito</h1>
-            <div class="carro">
-                <div class="producto">
-                    <div class="product">
-
-                        <img src="../figuras/sona.jpg" alt="Nendo Sona">
-
-                    </div>
-                    <h6 class="nombre">Nendoroid Sona</h6>
-                    <h6 class="precio">$20.000</h6>
-                    <h6 class="cantidad">2</h6>
-                    <h6 class="subtotal">$40.000</h6>
-                </div>
-                <div class="producto">
-                    <div class="product">
-
-                        <img src="../figuras/Figura Ahri Spirit blossom.jpg" alt="figura ahri">
-
-                    </div>
-                    <h6 class="nombre">Figura Ahri</h6>
-                    <h6 class="precio">$60.000</h6>
-                    <h6 class="cantidad">1</h6>
-                    <h6 class="subtotal">$60.000</h6>
-                </div>
-                <div class="total">
-                    <h4>Total: $100.000</h4>
-                </div>
-            </div>
-            <div class="promo">
-                <label for="promo-codigo">Ingrese un codigo de promocion:</label>
-                <input type="texto" id="promo-codigo" name="promo-codigo">
-                <button>Enviar</button>
-            </div>
-        </div>
-    </body>
-
+    <h1 class="titulo-carrito">Carrito de compras</h1>
+    <section id="catalogo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Imagen</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in carro %}
+                    <tr>
+                        <td>{{ item.0 }}</td>
+                        <td>{{ item.1 }}</td>
+                        <td><img class="imagen-carrito" src="{{ item.2 }}" alt=""></td>
+                        <td>{{ item.3 }}</td>
+                        <td>{{ item.4 }}</td>
+                        <td>{{ item.5 }}</td>
+                        <td>
+                            <a href="{% url 'dropitem' item.0 %}">
+                                <img src="{% static 'images carro/icons8_trash_can_30px.png' %}" alt="">
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
 
 </body>
 
+{% if not carro %}
+<h2 style="width: 100%; text-align: center; color: #c7c3c3;">Tu carrito esta vacio!!</h2>
+{% endif %}
+
 <p id="espacioloko2footercarro">
-  
+
 </p>
 
 
 <footer>
     <div class="contenedor-footer">
-      <div class="footer-info">
-  
-          <div class="seccion">
-              <h3>Acerca de nosostros</h3>
-              <p>GGstore, pagina pionera dedicada a la venta de productos de league of legends</p>
-          </div>
-  
-          <div class="seccion">
-              <h3>Contactanos</h3>
-              <p>GGstore@gmail.cl</p>
-              <p> </p>
-              <p>+56 9 8170 0253</p>
-          </div>
-  
-          <div class="seccion">
-              <h3>Redes sociales</h3>
-              <ul class="social-media">
-                  <li><img src="{% static 'images index/facebook_40px.png' %}" alt="facebook"><a href="#">Facebook</a></li>
-  
-                  <li><img src="{% static 'images index/twitter_40px.png' %}" alt="Twitter"><a href="#">Twitter</a></li>
-  
-                  <li><img src="{% static 'images index/instagram_logo_40px.png' %}" alt="Instagram"><a href="#">Instagram</a></li>
-  
-              </ul>
-  
-          </div>
-      </div>
-      <div class="copyright">
-          <p>&copy; GGstore 2024. Todos los derechos reservados</p>
-      </div>
-  </div>
-  </footer>
-  
-  </html>
+        <div class="footer-info">
+
+            <div class="seccion">
+                <h3>Acerca de nosostros</h3>
+                <p>GGstore, pagina pionera dedicada a la venta de productos de league of legends</p>
+            </div>
+
+            <div class="seccion">
+                <h3>Contactanos</h3>
+                <p>GGstore@gmail.cl</p>
+                <p> </p>
+                <p>+56 9 8170 0253</p>
+            </div>
+
+            <div class="seccion">
+                <h3>Redes sociales</h3>
+                <ul class="social-media">
+                    <li><img src="{% static 'images index/facebook_40px.png' %}" alt="facebook"><a href="#">Facebook</a></li>
+
+                    <li><img src="{% static 'images index/twitter_40px.png' %}" alt="Twitter"><a href="#">Twitter</a></li>
+
+                    <li><img src="{% static 'images index/instagram_logo_40px.png' %}" alt="Instagram"><a href="#">Instagram</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; GGstore 2024. Todos los derechos reservados</p>
+        </div>
+    </div>
+</footer>
+
+</html>
