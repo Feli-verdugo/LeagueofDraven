@@ -12,6 +12,12 @@
     
 }
 
+.figuras img{
+    max-width: 100%;
+    height: auto;
+
+}
+
 .navbar-nav {
     font-family: fuentelol;
     margin: 0;
@@ -217,11 +223,12 @@ footer {
 
 .figuras{
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
     padding: 10px;
     width: 35vh;
     background-color: #967a45;
-    justify-content: space-between;
+    border-radius: 5px;
+    
 }
 
 .cant-precio{

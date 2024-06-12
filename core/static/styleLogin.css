@@ -72,11 +72,13 @@ nav{
 }
 
 .contenedor{
-  background-color: #ffffff;
+  background-color: #967a45;
   padding: 50px;
-  border-radius: 0px;
-  width: 40%;
+  border-radius: 30px;
+  width: 100vh;
   opacity: 90%;
+  margin-top: 30vh;
+  margin-left: 45vh;
 }
 
 form{
@@ -149,8 +151,8 @@ p{
 footer {
   background-color: #967a45;
   color: #fff;
-  padding: 20px 0;
-  
+  padding: 20px ;
+  margin-top: 200px;
 }
 
 .footer-info {
@@ -199,3 +201,12 @@ h3 {
 .btn-registrar{
   background-color: #e0c38d;
 }
+
+.registro{
+  justify-content: space-between;
+  width: 20vh;
+  display: flex;
+  align-items: center;
+  margin-left: 35vh;
+}
+

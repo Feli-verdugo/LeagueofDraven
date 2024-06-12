@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -123,12 +122,12 @@
 
 
 
-
+  
 
   <div class="contenedor">
 
     <h1>Registro de usuario</h1>
-    <form action="" method="post">
+    <form class="registro" action="" method="post">
       {% csrf_token %}
       {{ form }}
       <button type="submit">iniciar sesion</button>
