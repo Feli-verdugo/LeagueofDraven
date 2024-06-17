@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import *
-
+from .forms import *
 def home(request):
     return render(request, 'core/Index.html')
 
@@ -49,3 +49,14 @@ def addtocar(request, id):
 def limpiar(request):
     request.session.flush()
     return redirect(to="home")   
+
+
+def registro(request):
+    if request.method == 'POST':
+        registro = Registro(request.POST)
+        if registro.is_valid():
+            registro.save()
+            return redirect(to="login")
+    else:
+        registro = Registro()
+    return render(request, 'core/registro.html',{'form':registro})

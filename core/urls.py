@@ -14,4 +14,5 @@ urlpatterns = [
     path('addtocar/<id>', addtocar, name="addtocar"),
     path('dropitem/<id>', dropitem, name="dropitem"),
     path('limpiar', limpiar),
+    path('registro', registro, name="registro"),
 ]
