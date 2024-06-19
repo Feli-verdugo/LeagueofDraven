@@ -9,7 +9,8 @@ def Figuras(request):
     return render(request, 'core/Figuras.html', {'figuras':figuras, "carro":request.session.get("carro", [])})
 
 def accesorios(request):
-    return render(request, 'core/accesorios.html')
+    accesorios = Producto.objects.filter(categoria="ACCESORIOS")
+    return render(request, 'core/accesorios.html', {'accesorios':accesorios, "carro":request.session.get("carro", [])})
 
 def ropa(request):
     ropa = Producto.objects.filter(categoria="ROPA")
