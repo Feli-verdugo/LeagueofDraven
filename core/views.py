@@ -5,14 +5,15 @@ def home(request):
     return render(request, 'core/Index.html')
 
 def Figuras(request):
-    figuras = Producto.objects.all()
+    figuras = Producto.objects.filter(categoria="FIGURA")
     return render(request, 'core/Figuras.html', {'figuras':figuras, "carro":request.session.get("carro", [])})
 
 def accesorios(request):
     return render(request, 'core/accesorios.html')
 
 def ropa(request):
-    return render(request, 'core/ropa.html')
+    ropa = Producto.objects.filter(categoria="ROPA")
+    return render(request, 'core/ropa.html', {'ropa':ropa, "carro":request.session.get("carro", [])})
 
 def login(request):
     return render(request, 'core/login.html')

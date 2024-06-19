@@ -110,7 +110,7 @@
         <div class="product-container">
             {% for figura in figuras %}
             <div class="figuras">
-                <img src="{{ figura.imagen }}" alt="" class="imagen">
+                <img src="{% static figura.imagen %}" alt="" class="imagen">
             <div>
                 <div class="cant-precio">
                     <div class="nombre-producto">

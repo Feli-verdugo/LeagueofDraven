@@ -6,5 +6,6 @@ class Producto(models.Model):
     precio = models.IntegerField()
     stock = models.IntegerField()
     imagen = models.CharField(max_length=255)
+    categoria = models.CharField(max_length=40)
 
 
