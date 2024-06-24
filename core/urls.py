@@ -7,7 +7,7 @@ urlpatterns = [
     path('', home, name="home"),
     path('Figuras', Figuras, name="figuras"),
     path('accesorios', accesorios, name="accesorios"),
-    path('ropa', ropa, name="ropa"),
+    path('ropa', ropa, name="ropas"),
     path('login', LoginView.as_view(template_name='core/login.html'), name="login"),
     path('logout', LogoutView.as_view(), name="logout"),
     path('carrito', carrito, name="carrito"),

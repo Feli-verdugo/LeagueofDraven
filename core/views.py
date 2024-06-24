@@ -14,7 +14,7 @@ def accesorios(request):
 
 def ropa(request):
     ropa = Producto.objects.filter(categoria="ROPA")
-    return render(request, 'core/ropa.html', {'ropa':ropa, "carro":request.session.get("carro", [])})
+    return render(request, 'core/ropa.html', {'ropas':ropa, "carro":request.session.get("carro", [])})
 
 def login(request):
     return render(request, 'core/login.html')
@@ -46,7 +46,7 @@ def addtocar(request, id):
     else:
         carro.append([id, producto.nombre, producto.imagen, producto.precio, 1, producto.precio])
     request.session["carro"] = carro
-    return redirect (to="figuras")
+    return redirect (to="carrito")
 
 def limpiar(request):
     request.session.flush()

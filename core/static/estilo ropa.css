@@ -215,3 +215,17 @@ footer {
     padding: 80px;
   
   }
+
+.ropas{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 35vh;
+    background-color: #967a45;
+    border-radius: 5px;
+    
+}
+
+.cant-precio{
+    text-align: justify;
+}

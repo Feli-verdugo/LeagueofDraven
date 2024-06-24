@@ -71,7 +71,7 @@
                         <a class="nav-link" href="{% url 'accesorios' %}">Accesorios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'ropa' %}">Ropa</a>
+                        <a class="nav-link" href="{% url 'ropas' %}">Ropa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'login' %}">Login</a>
@@ -104,75 +104,29 @@
 
     <div class="container">
 
-        <div class="product-container">
-            
-            <div class="product">
-                <a href="producto1.html">
-                    <img src="Anillos.png" alt="Anillos">
-                    <p>Anillos de Linea</p>
-                </a>
+        <div class="product-container2">
+            {% for accesorio in accesorios %}
+            <div class="Accesorios">
+                <img src="{% static accesorio.imagen %}" alt="" class="imagen">
+            <div>
+                <div class="cant-precio">
+                    <div class="nombre-producto">
+                        <span>{{ accesorio.nombre }}</span>
+                    </div>
+                    <div class="cantidad">
+                        <span>quedan</span>
+                        <span>{{ accesorio.stock }}</span>
+                    </div>
+                    <div class="precio">
+                        <span>${{ accesorio.precio }}</span>
+                    </div>
+                </div>
+                <div class="agregar">
+                    <a href="{% url 'addtocar' accesorio.id %}">agregar al carrito</a>
+                </div>
             </div>
-            
-            <div class="product">
-                <a href="producto2.html">
-                    <img src="Yone mousepad.png" alt="Mosepad Yone">
-                    <p>Mousepad de Yone</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto3.html">
-                    <img src="Peluche de poro.png" alt="Peluche de poro">
-                    <p>Poro Peluche</p>
-                </a>
-            </div>
-            
-            <div class="product">
-                <a href="producto5.html">
-                    <img src="llavero yuumi.png" alt="Llavero Yuumi">
-                    <p>Keychain de Yuumi</p>
-                </a>
-            </div>
-
-            
-            <div class="product">
-                <a href="producto6.html">
-                    <img src="Llavero rakkan y xayah.png" alt="Llavero Rakan">
-                    <p>Keychain Rakan y Xayah</p>
-                </a>
-            </div>
-
-            
-            <div class="product">
-                <a href="producto7.html">
-                    <img src="collar kindred.png" alt="Collar kindred">
-                    <p>Collar Kindred</p>
-                </a>
-            </div>
-
-            
-            <div class="product">
-                <a href="producto8.html">
-                    <img src="Collar jinx.png" alt="Collar Jinx">
-                    <p>Collar Jinx</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto9.html">
-                    <img src="Peluche Gwen.png" alt="Peluche Gwen">
-                    <p>Peluche Gwen</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto10.html">
-                    <img src="../index/Figura de annie.png" alt="Figura coleccion Annie">
-                    <p>Figura Coleccion annie</p>
-                </a>
-            </div>
-
-
+        </div>
+            {% endfor %}
         </div>
     </div>
 </body>

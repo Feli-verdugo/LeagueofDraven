@@ -71,7 +71,7 @@
                         <a class="nav-link" href="{% url 'accesorios' %}">Accesorios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'ropa' %}">Ropa</a>
+                        <a class="nav-link" href="{% url 'ropas' %}">Ropa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'login' %}">Login</a>
@@ -110,179 +110,34 @@
     <div class="container">
 
         <div class="product-container">
-
-            <div class="product">
-
-
-                <a href="producto1.html">
-                    <img src="Camisetas teemo.png" alt="Camiseta teemo">
-                    <p>Camisetas variadas Teemo</p>
-                </a>
-
+            {% for ropa in ropas %}
+            <div class="ropas">
+                <img src="{% static ropa.imagen %}" alt="" class="imagen">
+            <div>
+                <div class="cant-precio">
+                    <div class="nombre-producto">
+                        <span>{{ ropa.nombre }}</span>
+                    </div>
+                    <div class="cantidad">
+                        <span>quedan</span>
+                        <span>{{ ropa.stock }}</span>
+                    </div>
+                    <div class="precio">
+                        <span>${{ ropa.precio }}</span>
+                    </div>
+                </div>
+                <div class="agregar">
+                    <a href="{% url 'addtocar' ropa.id %}">agregar al carrito</a>
+                </div>
             </div>
-
-            <div class="product">
-                <a href="producto2.html">
-                    <img src="Tank top akali kda.png" alt="Tank top akali">
-                    <p>Tank top Akali K/DA</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto3.html">
-                    <img src="Camiseta kda.png" alt="Camiseta kda">
-                    <p>Camiseta K/DA</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto4.html">
-                    <img src="Camisetas champs.png" alt="Camisetas campeones">
-                    <p>Camisetas de campeones variadas</p>
-                </a>
-            </div>
-
-
-
-            <div class="product">
-                <a href="producto5.html">
-                    <img src="Calcetines gg ez.png" alt="Calcetines GG EZ">
-                    <p>Calcetines GG EZ</p>
-                </a>
-            </div>
-
-
-            <div class="product">
-                <a href="producto6.html">
-                    <img src="Calcetines kindred.png" alt="Calcetines Kindred">
-                    <p>Calcetines Kindred</p>
-                </a>
-            </div>
-
-
-            <div class="product">
-                <a href="producto7.html">
-                    <img src="Calcetines ramon.png" alt="Calcetines Ramon blanco">
-                    <p>Calcetines Ramon color blanco</p>
-                </a>
-            </div>
-
-
-            <div class="product">
-                <a href="producto8.html">
-                    <img src="Calcetines ramon negro.png" alt="Calcetines ramon negro">
-                    <p>Calcetines Ramon color negro</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto9.html">
-                    <img src="Chaqueta Jinx.png" alt="Chaqueta Jinx">
-                    <p>Chaqueta Jinx</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto10.html">
-                    <img src="Camiseta yone.png" alt="Camiseta Yone">
-                    <p>Camiseta Yone</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto11.html">
-                    <img src="camiseta Yasuo feeder.png" alt="Camiseta Yasuo">
-                    <p>Camiseta Yasuo feeder</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto12.html">
-                    <img src="Jaime enrique camiseta.png" alt="Camiseta jaime enrique">
-                    <p>Camiseta I love jaime enrique</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto13.html">
-                    <img src="Camiseta Ramon OK.png" alt="Camiseta Ramon Ok">
-                    <p>Camiseta Ramon OK</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto14.html">
-                    <img src="Boxers ramon.png" alt="Boxers Ramon">
-                    <p>Boxers Ramon</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto15.html">
-                    <img src="Boxer ivern.png" alt="Boxer Ivern">
-                    <p>Boxers Ivern</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto16.html">
-                    <img src="Cosplay ahri.png" alt="Cosplay Ahri">
-                    <p>Cosplay Ahri</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto17.html">
-                    <img src="Cosplay ahri flor espiritual.png" alt="Cosplay Ahri flor espiritual">
-                    <p>Cosplay Ahri flor espiritual</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto18.html">
-                    <img src="Cosplay de gwen.png" alt="Cosplay Gwen">
-                    <p>Cosplay Gwen</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto19.html">
-                    <img src="Cosplay seraphine.png" alt="Cosplay Seraphine">
-                    <p>Cosplay Seraphine</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto20.html">
-                    <img src="Opera Captura de pantalla_2024-03-31_204418_es.aliexpress.com.png" alt="Cosplay Jinx">
-                    <p>Cosplay Jinx</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto21.html">
-                    <img src="Cosplay ahri medianoche.png" alt="Cosplay Ahri Medianoche">
-                    <p>Cosplay Ahri Medianoche</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto22.html">
-                    <img src="cosplay akali guardiana estelar.png" alt="Cosplay Akali guardiana estelar">
-                    <p>Cosplay Akali guardiana estelar</p>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="producto23.html">
-                    <img src="Cosplay aphelios.png" alt="Cosplay Aphelios">
-                    <p>Cosplay Aphelios Heartsteel</p>
-                </a>
-            </div>
-
+        </div>
+            {% endfor %}
         </div>
     </div>
 </body>
+
+    
+
 
 <p id="espacioloko2footerropa">
   
