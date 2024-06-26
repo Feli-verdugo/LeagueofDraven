@@ -149,6 +149,7 @@ footer {
 
 table{
     width: 90%;
+    
 }
 
 thead{
@@ -160,6 +161,7 @@ thead{
 
 th{
     padding: 5px;
+    
 }
 
 td{
@@ -179,10 +181,12 @@ td{
 tbody{
     color: #1d1c1c;
     background-color: #cba865;
+
 }
 
 table{
     margin: 10vh;
+    
 }
 
 .titulo-carrito{
