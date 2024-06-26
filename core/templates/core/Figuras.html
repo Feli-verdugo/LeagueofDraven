@@ -117,7 +117,7 @@
                         <span>{{ figura.nombre }}</span>
                     </div>
                     <div class="cantidad">
-                        <span>quedan</span>
+                        <span>Stock:</span>
                         <span>{{ figura.stock }}</span>
                     </div>
                     <div class="precio">
@@ -126,6 +126,7 @@
                 </div>
                 <div class="agregar">
                     <a href="{% url 'addtocar' figura.id %}">agregar al carrito</a>
+                    
                 </div>
             </div>
         </div>
