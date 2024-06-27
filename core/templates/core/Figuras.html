@@ -47,6 +47,13 @@
             
         }
 
+        .no-underline{
+        text-decoration: none; 
+       }
+
+      
+
+
         
 
         
@@ -125,7 +132,7 @@
                     </div>
                 </div>
                 <div class="agregar">
-                    <a href="{% url 'addtocar' figura.id %}">agregar al carrito</a>
+                    <a href="{% url 'addtocar' figura.id %}" class="no-underline">Agregar al carrito</a>
                     
                 </div>
             </div>

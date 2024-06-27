@@ -47,6 +47,22 @@
             color: #000;
             text-decoration: none;
         }
+
+        .no-underline{
+        text-decoration: none; 
+       }
+
+       .nombre-producto {
+
+            color: #000;
+            font-weight: bold; 
+
+        }
+
+        .precio {
+            color: #000;
+
+        }
     </style>
 </head>
 
@@ -127,7 +143,7 @@
                     </div>
                 </div>
                 <div class="agregar">
-                    <a href="{% url 'addtocar' ropa.id %}">agregar al carrito</a>
+                    <a href="{% url 'addtocar' ropa.id %}" class="no-underline">Agregar al carrito</a>
                 </div>
             </div>
         </div>
