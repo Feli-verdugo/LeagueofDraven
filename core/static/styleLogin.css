@@ -186,7 +186,7 @@ h3 {
 
 .social-media li a {
   color: #fff;
-    text-decoration: none;
+  text-decoration: none;
 }
 .copyright{
   font-family: fuente lol;
@@ -210,3 +210,38 @@ h3 {
   margin-left: 35vh;
 }
 
+.estilo_registro {
+  background-color: #967a45;
+  justify-content: space-between;
+  display: flex;
+  width: 43vh;
+  margin-left: 84vh;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  border-radius: 5px;
+  margin: center;
+  margin-top: 10vh;
+  
+}
+
+.registro h3{
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.redireccion_registro {
+  width: 95%;
+  text-align: center;
+  background-color: #fff;
+  color: #000000;
+  text-decoration: none;
+}
+
+.redireccion_registro :hover{
+  background-color: #967a45;
+}
+
+.contenedor_registro h1{
+  color: #000000;
+}

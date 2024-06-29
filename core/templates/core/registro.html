@@ -11,7 +11,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
     body {
-      background-color: #dedfe0;
+      background-color: #000000;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -91,7 +91,7 @@
             <a class="nav-link" href="{% url 'accesorios' %}">Accesorios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'ropa' %}">Ropa</a>
+            <a class="nav-link" href="{% url 'ropas' %}">Ropa</a>
           </li>
           {% if user.is_authenticated %}
             {{ user.username }}
@@ -114,11 +114,11 @@
     </div>
   </nav>
   
-
+  
   <div class="contenedor_registro">
-
-    <h1>Registro</h1>
-    <form class="" action="" method="post">
+    
+    <form class="estilo_registro" action="" method="post">
+      <h1>Registro</h1>
       {% csrf_token %}
       {{ form }}
       <button type="submit">Registrar</button>

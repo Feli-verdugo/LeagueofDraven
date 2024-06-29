@@ -131,6 +131,8 @@
       {% csrf_token %}
       {{ form }}
       <button type="submit">iniciar sesion</button>
+      <h3> ¿No tienes cuenta? Registrate aqui!</h3>
+      <a class="redireccion_registro" href="{% url 'registro' %}">Registrarse</a>
     </form>
     
   </div>

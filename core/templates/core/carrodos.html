@@ -158,6 +158,10 @@
 
 {% if not carro %}
 <h2 style="width: 100%; text-align: center; color: white;">Tu carrito esta vacio!!</h2>
+{% else %}
+<div class="comprar">
+    <a href="{% url 'comprar' %}">comprar</a>
+</div>
 {% endif %}
 
 <p id="espacioloko2footercarro">

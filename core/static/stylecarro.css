@@ -6,7 +6,25 @@
     justify-content: space-evenly;
 }
 
+.comprar{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
 
+.comprar > a{
+    line-height: 40px;
+    background-color: #cba865;
+    color: #ffffff;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.comprar > a:hover{
+    background-color: #9c814e;
+    
+}
 
 body {
     margin: 0;

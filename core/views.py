@@ -1,6 +1,29 @@
 from django.shortcuts import render, redirect
 from .models import *
 from .forms import *
+
+def comprar(request):
+    if not request.user.is_authenticated:
+        return redirect(to="login")
+    carro = request.session.get("carro", [])
+    total = 0
+    for item in carro:
+        total += item[5]
+    venta = Venta()
+    venta.cliente = request.user
+    venta.total = total
+    venta.save()
+    for item in carro:
+        detalle = DetalleVenta()
+        detalle.producto = Producto.objects.get(id = item[0])
+        detalle.precio = item[3]
+        detalle.cantidad = item[4]
+        detalle.venta = venta
+        detalle.save()
+        request.session["carro"] = []
+    return redirect(to="carrito")
+
+
 def home(request):
     return render(request, 'core/Index.html')
 
