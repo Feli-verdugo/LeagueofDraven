@@ -212,17 +212,27 @@ h3 {
 
 .estilo_registro {
   background-color: #967a45;
-  justify-content: space-between;
+  border-radius: 20px;
   display: flex;
-  width: 43vh;
-  margin-left: 84vh;
+  width: 60%;
+  flex-direction: column;
+  padding: 5%;
+  margin: 25vh;
+  margin-left: 37vh;
+}
+
+.estilo_registro div{
+  display: flex;
+  width: 100%;
   flex-wrap: wrap;
-  padding: 10px;
-  align-items: center;
-  border-radius: 5px;
-  margin: center;
-  margin-top: 10vh;
-  
+}
+.estilo_registro div label,.estilo_registro div input{
+  display: block !important;
+  width: 50%;
+}
+
+.helptext{
+  display: none !important;
 }
 
 .registro h3{
@@ -242,6 +252,8 @@ h3 {
   background-color: #967a45;
 }
 
-.contenedor_registro h1{
+.contenedor_registro{
   color: #000000;
+  justify-content: center;
+  align-items: center;
 }
