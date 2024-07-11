@@ -121,6 +121,9 @@
         </div>
     </nav>
 
+    
+    
+
     <h1 class="titulo-carrito">Carrito de compras</h1>
     <section id="catalogo">
         <table class="tablacarrito">
@@ -142,9 +145,9 @@
                         <td style="font-weight: bold;">{{ item.1 }}</td>
                         <td><img class="imagen-carrito" src="{% static item.2 %}" alt=""></td>
                         
-                        <td>{{ item.3 }}</td>
+                        <td style="font-weight: bold;">{{ item.3 }}</td>
                         <td>{{ item.4 }}</td>
-                        <td>{{ item.5 }}</td>
+                        <td style="font-weight: bold;">{{ item.5 }}</td>
                         <td>
                             <a href="{% url 'dropitem' item.0 %}">
                                 <img src="{% static 'images carro/icons8_trash_can_30px.png' %}" alt="">
