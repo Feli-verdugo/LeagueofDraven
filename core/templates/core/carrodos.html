@@ -145,7 +145,7 @@
                         <td style="font-weight: bold;">{{ item.1 }}</td>
                         <td><img class="imagen-carrito" src="{% static item.2 %}" alt=""></td>
                         
-                        <td style="font-weight: bold;">{{ item.3 }}</td>
+                        <td>{{ item.3 }}</td>
                         <td>{{ item.4 }}</td>
                         <td style="font-weight: bold;">{{ item.5 }}</td>
                         <td>
@@ -165,7 +165,7 @@
 <h2 style="width: 100%; text-align: center; color: white;">Tu carrito esta vacio!!</h2>
 {% else %}
 <div class="comprar">
-    <a href="{% url 'comprar' %}">comprar</a>
+    <a href="{% url 'comprar' %}">Comprar</a>
 </div>
 {% endif %}
 
