@@ -167,26 +167,36 @@ footer {
 
 }
 
-table{
+.tablacarrito{
+    
     width: 90%;
+    
     
 }
 
-thead{
+.tablacarrito thead{
     background-color: #967a45;
     color: #c7c3c3;
     height: 30px;
     text-align: center;
 }
 
-th{
+.tablacarrito th{
     padding: 5px;
+    border: 1px solid black;
+    padding: 10px;
     
 }
 
-td{
+.tablacarrito td{
     text-align: center;
 }
+
+
+.tablacarrito tr {
+    border-bottom: 1px solid black;
+}
+
 
 .imagen-carrito{
     display: flex;
