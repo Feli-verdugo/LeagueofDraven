@@ -126,14 +126,14 @@ video {
     animation: backwards;  
     
 }
-  
+
 
 
 
 .texto-central h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  font-family: fuentelol;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: fuentelol;
 }
 
 
@@ -145,7 +145,7 @@ video {
     height: 5.5vh; 
     
 }
-   
+
 
 img {
     max-width: 100%; 

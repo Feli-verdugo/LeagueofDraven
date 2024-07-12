@@ -24,6 +24,7 @@ def comprar(request):
     return redirect(to="carrito")
 
 
+
 def home(request):
     return render(request, 'core/Index.html')
 
@@ -43,7 +44,9 @@ def login(request):
     return render(request, 'core/login.html')
 
 def carrito(request):
-    return render(request, 'core/carrodos.html', {"carro":request.session.get("carro", [])})
+    carro = request.session.get("carro", [])
+    total = sum(item[5] for item in carro)  # Calcula el total del carrito
+    return render(request, 'core/carrodos.html', {"carro": carro, "total": total})
 
 def dropitem(request, id):
     carro = request.session.get("carro", [])

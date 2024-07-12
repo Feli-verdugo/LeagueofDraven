@@ -6,10 +6,22 @@
     justify-content: space-evenly;
 }
 
+.total-compra h2{
+    justify-content: flex-end;
+    color: #000000;
+    text-align: center;
+    background-color: #967a45;
+    margin: 50px;
+    font-family: fuente lol;
+}
+
+
+
 .comprar{
     width: 95%;
     display: flex;
     justify-content: flex-end;
+    font-family: fuente lol;
 }
 
 .comprar > a{
@@ -217,25 +229,55 @@ tbody{
 
 table{
     margin: 10vh;
-    
+    font-family: fuente lol;
 }
 
-.titulo-carrito{
-    justify-content: center;
+.video-container-central {
     display: flex;
-    color: #c7c3c3;
+    justify-content: center;
+    align-items: center;
+    height: 43vh; 
+}
+
+video {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+
+/*texto central*/
+
+.texto-central {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    font-family: fuente lol;
+    transform: translate(-50%, -200%);
+    text-align: center;
+    color: #fff8f8; 
+    font-size: 4rem;
+    margin-bottom: 20px;
+    
 }
 
 
 .imagen-carrito{
-
-
-
     padding: 10px;
     width: 25vh;
 
 }
 
 
+.decoracion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5vh; 
+    
+}
 
 
+img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
