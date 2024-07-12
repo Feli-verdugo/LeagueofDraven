@@ -11,7 +11,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
     body {
-      background-color: #000000;
+      background-color: #020b0f;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -93,7 +93,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'ropas' %}">Ropa</a>
           </li>
-          {% if user.is_authenticated %}
+          <div class="prueba">{% if user.is_authenticated %}
             {{ user.username }}
             <form action="{% url 'logout' %} " method="post">
               {% csrf_token %}
@@ -101,7 +101,8 @@
             </form>
           {% else %}
             <a id=login2 href="{% url 'login' %}">Login</a>
-          {% endif %}
+          {% endif %}</div>
+          
             
         </ul>
       </div>
@@ -110,6 +111,9 @@
         <img src="{% static 'images index/carrito_compra.png' %}" alt="" height="55">
       </a>
       
+      <div id="logo" class="navbar-brand1" href="">
+        <img src="{% static 'images index/GGSTORE_ICON.png' %}" alt="" height="">
+      </div>
 
     </div>
   </nav>
@@ -129,9 +133,7 @@
 </body>
 
 
-<p id="espacioloko2footerlogin">
-  
-</p>
+
 
 
 <footer>

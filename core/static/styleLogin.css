@@ -126,10 +126,10 @@ p{
 .video-container{
     position: absolute;
     bottom: 0;
-    top: 0;
+    top: 15vh;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 109%;
     z-index: -3;
 }
 
@@ -210,16 +210,7 @@ h3 {
   margin-left: 35vh;
 }
 
-.estilo_registro {
-  background-color: #967a45;
-  border-radius: 20px;
-  display: flex;
-  width: 60%;
-  flex-direction: column;
-  padding: 5%;
-  margin: 25vh;
-  margin-left: 37vh;
-}
+
 
 .estilo_registro div{
   display: flex;
@@ -243,7 +234,7 @@ h3 {
 .redireccion_registro {
   width: 95%;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000000;
   text-decoration: none;
 }
@@ -254,6 +245,51 @@ h3 {
 
 .contenedor_registro{
   color: #000000;
+  align-items: center;
+  padding: 15vh;
+  
+}
+
+.estilo_registro {
+  background-color: #967a45;
+  border-radius: 20px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  padding: 5%;
+  margin: 10vh;
+  margin-left: -3vh;
+  font-family: fuente lol;
+  font-size: 3vh;
+}
+
+/*VIDEO CENTRAL*/
+.video-container-central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; 
+  margin-left: 130vh;
+  position: absolute;
+  top: 45vh;
+}
+
+.navbar-brand1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; 
+  margin-left: 120vh;
+  position: absolute;
+  top: 60vh;
+}
+
+video {
+  max-width: 100%; 
+  max-height: 100%; 
+}
+
+.prueba{
   justify-content: center;
   align-items: center;
 }
