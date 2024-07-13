@@ -1,26 +1,42 @@
 from django.shortcuts import render, redirect
 from .models import *
 from .forms import *
+from django.http import HttpResponse
+
 
 def comprar(request):
     if not request.user.is_authenticated:
         return redirect(to="login")
+    
     carro = request.session.get("carro", [])
-    total = 0
-    for item in carro:
-        total += item[5]
-    venta = Venta()
-    venta.cliente = request.user
-    venta.total = total
+    if not carro:
+        return redirect(to="carrito")
+
+    total = sum(item[5] for item in carro)
+    
+    venta = Venta(cliente=request.user, total=total)
     venta.save()
+    
     for item in carro:
-        detalle = DetalleVenta()
-        detalle.producto = Producto.objects.get(id = item[0])
-        detalle.precio = item[3]
-        detalle.cantidad = item[4]
-        detalle.venta = venta
-        detalle.save()
-        request.session["carro"] = []
+        producto = Producto.objects.get(id=item[0])
+        
+        if producto.stock >= item[4]:
+            producto.stock -= item[4]
+            producto.save()
+            
+            detalle = DetalleVenta(
+                producto=producto,
+                precio=item[3],
+                cantidad=item[4],
+                venta=venta
+            )
+            detalle.save()
+        else:
+            
+            
+            return HttpResponse(f'No hay suficiente stock disponible para {producto.nombre}.')
+    
+    request.session["carro"] = []
     return redirect(to="carrito")
 
 
