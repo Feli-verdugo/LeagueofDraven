@@ -77,9 +77,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'ropas' %}">Ropa</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'login' %}">Login</a>
-                    </li>
+                    {% if user.is_authenticated %}
+                    {{ user.username }}
+                    <form action="{% url 'logout' %} " method="post">
+                      {% csrf_token %}
+                      <button type="submit">Salir</button>
+                    </form>
+                  {% else %}
+                    <a id=login2 href="{% url 'login' %}">Login</a>
+                  {% endif %}
+        
                 </ul>
             </div>
             

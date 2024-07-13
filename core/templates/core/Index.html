@@ -207,12 +207,16 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'ropas' %}">Ropa</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'login' %}">Login</a>
-                </li>
                 {% if user.is_authenticated %}
-                  {{ user.name }}
-                {% endif %}
+                {{ user.username }}
+                <form action="{% url 'logout' %} " method="post">
+                  {% csrf_token %}
+                  <button type="submit">Salir</button>
+                </form>
+              {% else %}
+                <a id=login2 href="{% url 'login' %}">Login</a>
+              {% endif %}
+    
             </ul>
         </div>
 
@@ -250,29 +254,42 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{% static 'images index/Banner Playeras.png' %}" class="d-block w-100" alt="...">
+      <img src="{% static 'images index/Banner ropas.png' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption ">
-        <h5>Playeras De Muy Buena calidad</h5>
+        <h5></h5>
         <p></p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static 'images index/Banner figuritas.png' %}" class="d-block w-100" alt="...">
+      <img src="{% static 'images index/Banner figuras.png' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption">
-        <h5>Figuras Ediciones Especiales</h5>
+        <h5></h5>
         <p></p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static 'images index/Banner peluchitos.png' %}" class="d-block w-100" alt="...">
+      <img src="{% static 'images index/Banner accesorios.png' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption">
-        <h5>Peluches super suaves de tus personajes favoritos de league of legends</h5>
+        <h5></h5>
         <p></p>
       </div>
     </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'images index/banner kdea.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+
+
+
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
